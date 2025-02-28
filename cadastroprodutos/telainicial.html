@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Boa - Restaurante</title>
+    <!-- Link para o Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJqD2u3a1g8zwQNRM0nP1q8Ex7fQDAk6txGeH2fi5Q0vQ80Rst3b4Gso9oWe" crossorigin="anonymous">
+    <style>
+        /* Estilos adicionais */
+        .banner {
+            background-image: url('https://via.placeholder.com/1920x600?text=Comida+Boa');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .section-title {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Comida Boa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#pagina-inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cardapio">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nossa-historia">Nossa História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Principal -->
+    <header class="banner" id="pagina-inicial">
+        <div>
+            <h1>Bem-vindo ao Comida Boa!</h1>
+            <p>Sabores incríveis, preparados com amor.</p>
+        </div>
+    </header>
+
+    <!-- Cardápio -->
+    <section id="cardapio" class="container my-5">
+        <h2 class="section-title">Nosso Cardápio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Prato 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Prato 1</h5>
+                        <p class="card-text">Deliciosa descrição do prato 1.</p>
+                        <p><strong>R$ 29,90</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Prato 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Prato 2</h5>
+                        <p class="card-text">Deliciosa descrição do prato 2.</p>
+                        <p><strong>R$ 39,90</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Prato 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Prato 3</h5>
+                        <p class="card-text">Deliciosa descrição do prato 3.</p>
+                        <p><strong>R$ 49,90</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section id="nossa-historia" class="container my-5">
+        <h2 class="section-title">Nossa História</h2>
+        <p>O Comida Boa é um restaurante que nasceu do desejo de oferecer pratos deliciosos, preparados com carinho e qualidade. Fundado por uma equipe apaixonada pela gastronomia, nosso objetivo é proporcionar aos nossos clientes uma experiência única e inesquecível.</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container my-5">
+        <h2 class="section-title">Contato</h2>
+        <p>Endereço: Rua Exemplo, 123 - Bairro da Boa Comida, Cidade - Estado</p>
+        <p>Telefone: (XX) 1234-5678</p>
+        <p>Email: contato@comidaboa.com.br</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Comida Boa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script do Bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0gDXh8+P1GiV1kCBI5ubG5s8zqJxDgf7oU3z9ZnJKIUVs89D" crossorigin="anonymous"></script>
+</body>
+</html>
