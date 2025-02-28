@@ -18,6 +18,28 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            position: relative;
+        }
+        .banner h1 {
+            font-size: 3rem;
+        }
+        .banner p {
+            font-size: 1.5rem;
+        }
+        .btn-peça-agora {
+            position: absolute;
+            bottom: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #f39c12; /* cor dourada */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-peça-agora:hover {
+            background-color: #e67e22; /* cor mais intensa quando o botão é hover */
+            text-decoration: none;
         }
         .section-title {
             margin-top: 30px;
@@ -59,6 +81,7 @@
         <div>
             <h1>Bem-vindo ao Comida Boa!</h1>
             <p>Sabores incríveis, preparados com amor.</p>
+            <a href="#cardapio" class="btn-peça-agora">Peça Agora!</a> <!-- Botão "Peça Agora!" -->
         </div>
     </header>
 
@@ -102,20 +125,36 @@
     <!-- Nossa História -->
     <section id="nossa-historia" class="container my-5">
         <h2 class="section-title">Nossa História</h2>
-        <p>O Comida Boa é um restaurante que nasceu do desejo de oferecer pratos deliciosos, preparados com carinho e qualidade. Fundado por uma equipe apaixonada pela gastronomia, nosso objetivo é proporcionar aos nossos clientes uma experiência única e inesquecível.</p>
+        <p>A História da Inauguração do Restaurante "Comida Boa"
+
+Era uma manhã ensolarada de primavera quando o sonho do "Comida Boa" finalmente se tornou realidade. Fundado por um grupo de amigos apaixonados por gastronomia e pela alegria de reunir pessoas ao redor de uma boa refeição, o restaurante nasceu com um propósito claro: oferecer pratos deliciosos, preparados com carinho e ingredientes frescos, criando um ambiente acolhedor e inesquecível para todos os que cruzassem suas portas.
+
+A ideia de abrir o "Comida Boa" surgiu de uma conversa descontraída entre os fundadores durante uma viagem gastronômica. A partir daquele momento, a paixão por experimentar sabores e compartilhar momentos especiais foi o combustível que impulsionou a realização desse sonho. Eles sabiam que queriam mais do que um simples restaurante; queriam criar um espaço onde as pessoas se sentissem em casa, saboreando pratos que transmitissem o amor e a dedicação de quem os preparava.
+
+O local escolhido para a inauguração foi um charmoso casarão antigo no centro de Jaú, com paredes de tijolos expostos e janelas grandes que permitiam que a luz natural entrasse, criando uma atmosfera acolhedora e convidativa. O ambiente foi cuidadosamente decorado, misturando o rústico e o moderno, com toques de sofisticação e, ao mesmo tempo, uma sensação de aconchego. Cada detalhe foi pensado para transmitir a sensação de que, ali, as pessoas não apenas iriam se alimentar, mas viver uma experiência.
+
+A grande inauguração aconteceu em uma noite fria de outono, com uma fila de pessoas ansiosas do lado de fora. O aroma do prato especial do dia – um suculento e temperado filé de mignon acompanhado de um purê de batatas cremoso e legumes frescos – começava a se espalhar pelas ruas e fazia com que a curiosidade se transformasse em desejo imediato. A equipe do "Comida Boa" estava preparada para receber os primeiros clientes, e a expectativa era palpável.
+
+Os primeiros passos do restaurante foram desafiadores. Eles enfrentaram dificuldades, como qualquer novo empreendimento, mas a paixão pela cozinha e a vontade de fazer bem feito nunca os deixou desistir. Ao longo dos primeiros meses, o restaurante foi conquistando a confiança dos clientes e, aos poucos, uma clientela fiel foi se formando. O "Comida Boa" se tornou um ponto de encontro onde amigos e famílias celebravam momentos especiais, ou simplesmente saboreavam uma refeição feita com amor.
+
+Com o tempo, o restaurante começou a expandir suas opções de cardápio, incluindo pratos autorais que mesclavam influências locais com receitas internacionais. Mas uma coisa sempre se manteve constante: a busca por qualidade e o compromisso com a experiência do cliente. A filosofia de que "comida boa é aquela feita com alma" permeia cada prato servido, desde os mais simples até os mais sofisticados.
+
+Hoje, o "Comida Boa" não é apenas um restaurante, mas um símbolo de como sonhos podem se tornar realidade quando são feitos com dedicação, amor e, claro, boa comida. O restaurante se tornou um verdadeiro ícone na cidade, com uma equipe apaixonada e clientes que voltam sempre, atraídos não só pela comida, mas pela sensação de pertencimento e carinho que o ambiente transmite.
+
+E assim continua a história do "Comida Boa" – um lugar onde o prazer de comer e a alegria de estar com quem amamos se encontram, criando memórias que durarão para sempre.</p>
     </section>
 
     <!-- Contato -->
     <section id="contato" class="container my-5">
         <h2 class="section-title">Contato</h2>
-        <p>Endereço: Rua Exemplo, 123 - Bairro da Boa Comida, Cidade - Estado</p>
-        <p>Telefone: (XX) 1234-5678</p>
+        <p>Endereço: Rua 1, 226 - Bairro da Boa Comida, Jaú - São Paulo</p>
+        <p>Telefone: (14) 1234-5678</p>
         <p>Email: contato@comidaboa.com.br</p>
     </section>
 
     <!-- Rodapé -->
     <footer class="bg-light text-center py-3">
-        <p>&copy; 2025 Comida Boa. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Comida Boa. Caio Galera e Halef Zenatti.</p>
     </footer>
 
     <!-- Script do Bootstrap 5.3 -->
