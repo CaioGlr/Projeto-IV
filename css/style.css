@@ -1,0 +1,169 @@
+/* Geral */
+body {
+    background-image: url(../img/Fundo/4385652.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0;
+    position: relative;
+    display: flex;
+}
+
+.chef-image {
+    height: 100px; /* Define a altura da imagem */
+    width: 100px; /* Define a largura da imagem */
+    margin: 10px; /* Adiciona espaçamento ao redor da imagem */
+    float: left; /* Posiciona a imagem à esquerda do texto */
+}
+
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #800020; /* Cor vinho */
+    z-index: 1030;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombramento */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between; /* Distribui os links */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.navbar-nav .nav-item {
+    flex: 1; /* Cada link ocupa o mesmo espaço */
+    text-align: center; /* Centraliza o texto dos links */
+}
+
+.navbar-nav .text-cartoon {
+    flex: 2; /* O texto "Boa Comida" ocupa um pouco mais de espaço */
+}
+
+/* Links da Navbar */
+.navbar .nav-link {
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito de hover na navbar */
+.navbar .nav-link:hover {
+    background-color: #e9ecef;
+    color: #800020; /* Cor do texto muda para vinho */
+}
+
+/* Sidebar */
+.offcanvas {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #900000; /* Cor vinho mais escuro */
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2); /* Sombramento */
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+/* Links da Sidebar */
+.offcanvas .nav-link {
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px; /* Aumenta o espaçamento entre os links */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito de hover na sidebar */
+.offcanvas .nav-link:hover {
+    background-color: #e9ecef;
+    color: #900000; /* Cor do texto muda para vinho */
+}
+
+
+.content-titulo {
+    flex-grow: 1;
+    padding: 50px; /* Ajuste os valores conforme necessário */
+    margin: 10px; /* Ajuste os valores conforme necessário */
+    width: 100%; /* Garantir que ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+
+
+.banner {
+    background: url("../img/png-transparent-chef-s-uniform-hat-chef-hat-white-hand-rectangle-thumbnail.png") center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #900000; /* Cor vinho para o texto */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombramento no banner */
+}
+
+.btn-peça-agora {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-peça-agora:hover {
+    background-color: #e67e22;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção Nossa História */
+.nossa-historia-container {
+    background-color: #13090c; 
+    padding: 30px;
+    border-radius: 50px; 
+    border: 3px solid #380816;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 80%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Carrossel */
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+}
+
+.carousel-control-prev {
+    left: 450px; 
+}
+
+.carousel-control-next {
+    right: 450px; 
+}
+
+/* Footer */
+.footer {
+    width: 100%; /* Faz o footer ocupar toda a largura */
+    background-color: #343a40; /* Fundo escuro */
+    color: white; /* Texto branco */
+    padding: 1.5rem 0; /* Espaçamento interno */
+    text-align: center;
+}
