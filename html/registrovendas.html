@@ -9,26 +9,23 @@
     
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg shadow-sm w-100">
         <div class="container-fluid">
             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
-                Menu
+                <i class="fas fa-bars"></i> Menu
             </button>
     
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <ul class="navbar-nav me-auto justify-content-between w-100">
                 <li class="nav-item text-cartoon fs-4 fw-bold mb-2">Comida Boa</li>
-                <li class="nav-item"><a class="nav-link text-center" href="#pagina-inicial">Página Inicial</a></li>
-                <li class="nav-item"><a class="nav-link text-center" href="#cardapio">Cardápio</a></li>
-                <li class="nav-item"><a class="nav-link text-center" href="#contato">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-center" href="#contato">Cadastro</a></li>
-                
+                <li class="nav-item"><a class="nav-link text-center" href="./telaprincipal.html"><i class="fas fa-home"></i> Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="./listagemprodutos2.html"><i class="fas fa-utensils"></i> Cardápio</a></li>
+                <li class="nav-item"><a class="nav-link disabled text-center" href="./login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="./cadastrousuarios.html"><i class="fas fa-user-plus"></i> Cadastro</a></li>
             </ul>
-            </div>
         </div>
     </nav>
     
@@ -40,42 +37,145 @@
         <div class="offcanvas-body">
             <ul class="nav_bar ms-auto flex-column">
                 <li class="nav-item d-flex justify-content-start">
-                    <a class="nav-link me-2" href="#contato">Login</a>
-                    <a class="nav-link" href="#contato">Cadastro</a>
+                    <a class="nav-link me-2" href="./login.html">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a class="nav-link" href="./cadastrousuarios.html">
+                        <i class="fas fa-user-plus"></i> Cadastro
+                    </a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="./index.html">Página Inicial</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
-                <li class="nav-item"><a class="nav-link" href="./listagemprodutos.html">Cardápio</a></li>
-                <li class="nav-item"><a class="nav-link" href="./registrovendas.html">Registro Vendas</a></li>
-                <li class="nav-item"><a class="nav-link" href="./listagemvendas.html">Lista Vendas</a></li>
-                <li class="nav-item"><a class="nav-link" href="./dashboard.html">Dashboard</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./telaprincipal.html">
+                        <i class="fas fa-home"></i> Página Inicial
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">
+                        <i class="fas fa-chart-line"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cadastroprodutos.html">
+                        <i class="fas fa-box"></i> Cadastro de Produtos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./listagemprodutos.html">
+                        <i class="fas fa-list"></i> Listagem de Produtos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="./registrovendas.html">
+                        <i class="fas fa-file-invoice-dollar"></i> Registro de Vendas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./listagemvendas.html">
+                        <i class="fas fa-list-alt"></i> Lista de Vendas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contato.html">
+                        <i class="fas fa-headset"></i> Contato e Suporte
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
+ </div>
+ <div class="content-titulo">
+    <header class="text-center">
+        <div>
+            <h1 class="display-3 fw-bold">Registro de Vendas</h1>
+        </div>
+    </header>
+</div>
 
-    <div class="content">
-        <!-- Conteúdo principal do site -->
+    <div class="container mt-5 text-white box">
+        <form>
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Cliente</label>
+                <input type="text" class="form-control" id="cliente" required>
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" required>
+            </div>
+            <div class="mb-3">
+                <label for="produto" class="form-label">Produto</label>
+                <select class="form-control" id="produto" required>
+                    <option value="">Selecione um produto</option>
+                    <option value="produto1">Produto 1</option>
+                    <option value="produto2">Produto 2</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="quantidade" required>
+            </div>
+            <div class="mb-3">
+                <label for="dataVenda" class="form-label">Data da Venda</label>
+                <input type="date" class="form-control" id="dataVenda" required>
+            </div>
+            <div class="mb-3">
+                <label for="formaPagamento" class="form-label">Forma de Pagamento</label>
+                <select class="form-control" id="formaPagamento" required>
+                    <option value="">Selecione a forma de pagamento</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="cartao">Cartão</option>
+                    <option value="pix">Pix</option>
+                </select>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a href="index.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Voltar</a>
+                <button type="reset" class="btn btn-warning"><i class="fas fa-eraser"></i> Limpar</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Salvar</button>
+            </div>
+        </form>
+    </div>
+
     </div>
     
-    <footer class="mt-auto">
-        <div class="container text-center">
-            <h5 class="fw-bold">Comida Boa</h5>
-            <p>Rua 1, 226 - Bairro da Boa Comida, Jaú - SP</p>
-            <p>Telefone: (14) 1234-5678 | Email: contato@comidaboa.com.br</p>
-    
-            <div class="d-flex justify-content-center mb-3">
-                <a href="#" class="text-white mx-3"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="text-white mx-3"><i class="fab fa-twitter fa-2x"></i></a>
+    <div id="contato" class="content border border-radius 10px bg-dark text-white my-5 text-center p-4">
+        <div class="container">
+            <div class="row">
+                <!-- Dados da empresa -->
+                <div class="col-md-6 text-start">
+                    <h2 class="fw-bold">
+                        <i class="fas fa-address-book"></i> Contato
+                    </h2>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Rua 1, 226 - Bairro da Boa Comida, Jaú - SP</p>
+                    <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> (14) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> contato@comidaboa.com.br</p>
+                </div>
+                
+                <!-- Horário de funcionamento -->
+                <div class="col-md-6 text-start">
+                    <h2 class="fw-bold">
+                        <i class="fas fa-clock"></i> Horário de Funcionamento
+                    </h2>
+                    <p><i class="fas fa-calendar-day"></i> <strong>Segunda a Sexta:</strong> 11:00 - 22:00</p>
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Sábado e Feriados:</strong> 14:00 - 20:00</p>
+                    <p><i class="fas fa-times-circle"></i> <strong>Domingo:</strong> Fechado</p>
+                </div>
             </div>
-    
-            <p class="mb-0">&copy; 2025 Comida Boa. Todos os direitos reservados.</p>
         </div>
-    </footer>
     
-    <!-- FontAwesome para ícones -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+        <!-- Footer -->
+        <footer class="footer mt-4">
+            <div class="container text-center">
+                <p>&copy; 2025 Comida Boa. Todos os direitos reservados.</p>
+                <p>Por Caio Galera e Halef Zenatti</p>
+                <p class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </p>
+            </div>
+        </footer>
+    </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
